@@ -17,7 +17,7 @@ public class restClienteNodeExample {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 			StringBuilder stringBuilder = new StringBuilder();
 
-			reader.lines().forEach(a->stringBuilder.append(a));
+			reader.lines().forEach(a->stringBuilder.append(a + "\n"));
 			System.out.println(stringBuilder);
 			
 		} catch (Exception e) {
